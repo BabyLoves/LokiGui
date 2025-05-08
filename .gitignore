@@ -1,0 +1,45 @@
+# Ignore os diretórios de build
+bin/
+obj/
+
+# Arquivos de configuração gerados
+appsettings.json
+appsettings.*.json
+
+# Arquivos de IDE
+.vs/
+.vscode/
+.idea/
+
+# Arquivos de backup do editor
+*~
+*.bak
+*.swp
+
+# Arquivos de cache do .NET
+.dnu/
+.dnx/
+.nuget/
+packages/
+
+# Arquivos de projeto do ASP.NET Core
+wwwroot/
+
+# Arquivos de log
+*.log
+
+# Arquivos de compilação de pacotes NuGet
+*.nupkg
+
+# Arquivos temporários do Visual Studio
+.vs2017/
+.vs2019/
+
+# Diretórios de compilação do Rider
+.idea/
+
+# Arquivos de configuração do JetBrains Rider
+.idea/
+
+# Arquivos do Visual Studio para DB, Entity Framework, etc.
+*.dbmdl
