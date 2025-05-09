@@ -79,6 +79,13 @@ namespace LokiGui
 
         private void StartCapture(string sourceName, string targetName)
         {
+            //Verificação se Saída Origem e Destino são a mesma, se sim, encerra o programa.
+            if(sourceName == targetName)
+            {
+                MessageBox.Show("Dispositivo de origem e destino não podem ser o mesmo. \n Encerrando aplicação.","Saídas em ambiguidade");
+                Environment.Exit(0);
+            }
+
             using (var deviceEnumerator = new MMDeviceEnumerator())
             {
                 var deviceCollection = deviceEnumerator.EnumAudioEndpoints(DataFlow.Render, DeviceState.Active);
